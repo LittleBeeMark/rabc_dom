@@ -1,0 +1,82 @@
+---
+# 资源置初始化(服务启动时会进行数据检查，如果存在则不再初始化)
+- module_code: "user"
+  module_name: 用户管理
+  action_path: "/api/v1/user"
+  action_method: POST
+  action_code: add
+  action_name: 新增
+  role: "管理员,操作员Leader"
+
+- module_code: "user"
+  module_name: 用户管理
+  action_path: "/api/v1/user/:id"
+  action_method: PUT
+  action_code: edit
+  action_name: 编辑
+  role: "管理员,操作员Leader"
+
+- module_code: "user"
+  module_name: 用户管理
+  action_path: "/api/v1/user/:id"
+  action_method: PUT
+  action_code: delete
+  action_name: 删除
+  role: "管理员,操作员Leader"
+
+- module_code: "user"
+  module_name: 用户管理
+  action_path: "/api/v1/user/:id"
+  action_method: GET
+  action_code: detail
+  action_name: 详情
+  role: "管理员,操作员Leader,操作员,审计员"
+
+- module_code: "user"
+  module_name: 用户管理
+  action_path: "/api/v1/user"
+  action_method: GET
+  action_code: query
+  action_name: 查询
+  role: "管理员,操作员Leader,操作员,审计员"
+
+- module_code: "project"
+  module_name: 项目管理
+  action_path: "/api/v1/project"
+  action_method: GET
+  action_code: query
+  action_name: 查询
+  role: "管理员,操作员Leader,操作员,审计员"
+
+- module_code: "project"
+  module_name: 项目管理
+  action_path: "/api/v1/project/:id"
+  action_method: GET
+  action_code: detail
+  action_name: 详情
+  role: "管理员,操作员Leader,操作员,审计员"
+
+- module_code: "project"
+  module_name: 项目管理
+  action_path: "/api/v1/project"
+  action_method: POST
+  action_code: add
+  action_name: 添加
+  role: "管理员,操作员Leader"
+
+- module_code: "project"
+  module_name: 项目管理
+  action_path: "/api/v1/project/:id"
+  action_method: PUT
+  action_code: edit
+  action_name: 编辑
+  role: "管理员,操作员Leader"
+
+- module_code: "project"
+  module_name: 项目管理
+  action_path: "/api/v1/project"
+  action_method: DELETE
+  action_code: delete
+  action_name: 删除
+  role: "管理员,操作员Leader"
+
