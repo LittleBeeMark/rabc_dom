@@ -1,4 +1,4 @@
-"# rabc_dom" 
+# rabc_dom 
 数据库使用的是pg
 可以自己在本地建一个，别忘了把/config.yaml 中数据库的配置改为自己的
 
